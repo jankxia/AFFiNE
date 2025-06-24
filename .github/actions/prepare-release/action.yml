@@ -27,7 +27,7 @@ runs:
           BUILD_TYPE=stable
         elif [[ "$APP_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+-beta\.[0-9]+$ ]]; then
           BUILD_TYPE=beta
-        elif [[ "$APP_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+-canary\.[0-9a-f]+$ ]]; then
+        elif [[ "$APP_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+-canary\.[0-9a-f]+ ]]; then
           BUILD_TYPE=canary
         else
           echo "Error: unsupported version string: $APP_VERSION" >&2
